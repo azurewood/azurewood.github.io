@@ -1,98 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>My GitHub Page</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Portfolio">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Jian Zhou">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <title>Jian Zhou · Software Engineer</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Jian Zhou — Software Engineer focused on cross-platform UI and systems-level Rust tooling." />
+  <meta name="keywords" content="Rust, Slint, Dart, Cross-platform, Systems, TCP, gRPC, SVG, Market Data" />
+  <meta name="author" content="Jian Zhou" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Jian Zhou</h1>
-        <p>Software Developer & HPC Enthusiast</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- CSS-only theme toggle -->
+  <input id="theme-toggle" class="theme-toggle" type="checkbox" aria-label="Toggle dark mode" />
+  <label for="theme-toggle" class="theme-toggle-label">
+    <span class="theme-light">Light</span>
+    <span class="theme-dark">Dark</span>
+  </label>
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi there! I'm a software developer passionate about creating elegant solutions to complex problems. With
-                experience in full-stack development and a love for high performance computing, I'm always looking to
-                learn and contribute to meaningful projects.</p>
-        </section>
+  <header>
+    <h1>Jian Zhou</h1>
+    <p>Software Engineer · Cross-Platform & Systems Development</p>
+    <p class="meta">
+      Christchurch, Canterbury, NZ ·
+      <a href="mailto:jian.zhou@lincolnuni.ac.nz">jian.zhou@lincolnuni.ac.nz</a> ·
+      <a href="https://github.com/azurewood">github.com/azurewood</a>
+    </p>
+  </header>
 
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Chinatown</h3>
-                    <p>A social mobile app developed with low cost web technology (SUID and Capacitor), featuring
-                        real-time updates and private secure messaging.</p>
-                    <p>
-                        <a href="https://azurewood.github.io/rataland/">Details</a>
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>Weather NZ</h3>
-                    <p>An open-source project that simplifies data visualization for NZ climate, used by outdoors
-                        workers in Otago.</p>
-                    <p>
-                        <a href="https://weather-nz.vercel.app/">Details</a>
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>pNorm Visualisation</h3>
-                    <p>The foundation of Artificial Intelligence studies p-norm realm for mathematical modelling. This
-                        program produces fine grained images by using advanced Python libraries.
-                    </p>
-                    <p>
-                        <a href="https://github.com/Jian-Zhou-1163478/pNorm">Details</a>
-                    </p>
-                </div>
-                <div class="project-card">
-                    <h3>Links</h3>
-                    <p>Other projects listed below.
-                    </p>
-                    <p>
-                        <a href="https://jianzhou1163478.pythonanywhere.com/">Te Waihora farm management
-                            simulator</a></br>
-                        <a href="https://github.com/azurewood/capacitor-plugin-backswipe">Capacitor backswipe
-                            plugin</a></br>
-                        <a href="https://github.com/azurewood/sky">Sky secure messaging</a></br>
-                        <a href="https://apps.apple.com/gb/app/sky-indicator-lite/id6467558483">Sky Indicator Lite (App
-                            Store)</a></br>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-                    </p>
-                </div>
-            </div>
-        </section>
+  <main>
 
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>I'm always interested in hearing about new projects and opportunities. Feel free to reach out!</p>
-            <div class="social-links">
-                <a href="https://github.com/azurewood">GitHub</a>
-                <a href="https://www.linkedin.com/in/jian-zhou-8a7b4550">LinkedIn</a>
-                <a href="mailto:azurefintech@gmail.com">Email</a>
-            </div>
-        </section>
-    </main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I build <strong>cross-platform</strong> applications with a focus on
+        <strong>systems-level correctness</strong>, predictable performance,
+        and <strong>non-intrusive UI</strong>.
+      </p>
+      <p>
+        My recent work centers on <strong>GuaViewer</strong>, a cross-platform
+        market-data visualization tool built with <strong>Rust + Slint</strong>,
+        combining reliable networking with precise SVG-based rendering.
+      </p>
+    </section>
 
-    <footer>
-        <p>© 2025 Jian Zhou. Built with ❤️ using GitHub Pages.</p>
-    </footer>
+    <section id="skills">
+      <h2>Core Skills</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Languages</h3>
+          <p><strong>Rust</strong>, Dart, JavaScript / TypeScript, Python, Java, C++, SQL</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Cross-Platform UI</h3>
+          <p><strong>Slint</strong>, Flutter / Dart, React, React Native, SolidJS, HTML, CSS</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Systems & Networking</h3>
+          <p>TCP, connection pooling, failover, thread pools, gRPC, REST / OpenAPI</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Data & Visualization</h3>
+          <p>SVG rendering, time-series / market data, PostgreSQL, SQLite, MongoDB</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+
+      <div class="project-grid">
+
+        <div class="project-card featured">
+          <h3>GuaViewer</h3>
+
+          <div class="badges">
+            <span class="badge">Rust</span>
+            <span class="badge">Slint</span>
+            <span class="badge">SVG</span>
+          </div>
+
+          <p>
+            Cross-platform market-data viewer built with <strong>Rust + Slint</strong>.
+            SVG-based candlestick rendering, responsive UI, background workers.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Systems</span>
+            <span class="tag">UI</span>
+            <span class="tag">Desktop</span>
+          </div>
+
+          <p><a href="https://github.com/azurewood/guaViewer">GitHub</a></p>
+        </div>
+
+        <div class="project-card featured">
+          <h3>TcpTDX</h3>
+
+          <div class="badges">
+            <span class="badge">Rust</span>
+            <span class="badge">TCP</span>
+            <span class="badge">gRPC</span>
+          </div>
+
+          <p>
+            Rust market-data tooling with connection pooling, retry/failover,
+            and typed protocol parsing.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Systems</span>
+            <span class="tag">Networking</span>
+            <span class="tag">Data</span>
+          </div>
+
+          <p><a href="https://github.com/azurewood/guaViewer/releases/tag/v0.5.0">GitHub</a></p>
+        </div>
+
+        <div class="project-card">
+          <h3>Chinatown</h3>
+
+          <div class="badges">
+            <span class="badge">React Native</span>
+            <span class="badge">Mobile</span>
+          </div>
+
+          <p>
+            Cross-platform social application for overseas Chinese communities,
+            built for iOS and Android with a focus on real-world stability.
+          </p>
+
+          <div class="tags">
+            <span class="tag">Mobile</span>
+            <span class="tag">UI</span>
+            <span class="tag">Product</span>
+          </div>
+
+          <p>
+            <a href="https://play.google.com/store/apps/details?id=town.chinese.app">
+              Google Play
+            </a>
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Sky Indicator Lite</h3>
+
+          <div class="badges">
+            <span class="badge">iOS</span>
+            <span class="badge">FinTech</span>
+          </div>
+
+          <p>
+            iOS financial indicator app focused on quantitative signals
+            and practical visualization.
+          </p>
+
+          <div class="tags">
+            <span class="tag">UI</span>
+            <span class="tag">Mobile</span>
+            <span class="tag">FinTech</span>
+          </div>
+
+          <p>
+            <!-- <a href="https://apps.apple.com/gb/app/sky-indicator-lite/id6467558483">
+              App Store
+            </a> -->
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p>
+        If you’re hiring for cross-platform desktop/mobile, Rust systems work,
+        or data-visualization tooling, I’d love to hear from you.
+      </p>
+
+      <div class="social-links">
+        <a href="https://github.com/azurewood">GitHub</a>
+        <!-- <a href="https://www.linkedin.com/in/jian-zhou-8a7b4550">LinkedIn</a> -->
+        <a href="mailto:jian.zhou@lincolnuni.ac.nz">Email</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Jian Zhou · Built with GitHub Pages</p>
+  </footer>
+
 </body>
-
 </html>
